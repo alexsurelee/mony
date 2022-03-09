@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  background-color: var(--color-y-in-mn-blue);
+  overflow: hidden;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-floral-white);
+      color: var(--color-black-chocolate);
+    }
+    @media (prefers-color-scheme: light) {
+      background-color: var(--color-black-chocolate);
+      color: var(--color-floral-white);
+    }
+  }
+
+  a:active {
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-floral-white);
+      color: var(--color-black-chocolate);
+    }
+    @media (prefers-color-scheme: light) {
+      background-color: var(--color-black-chocolate);
+      color: var(--color-floral-white);
+    }
+  }
+}
