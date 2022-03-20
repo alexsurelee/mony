@@ -1,33 +1,36 @@
-nav {
+#navbar {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 20px;
   background-color: var(--color-y-in-mn-blue);
   overflow: hidden;
 }
-nav a {
+#navbar h1 {
+  margin-left: 20px;
+}
+#navbar a {
   text-decoration: none;
 }
 @media (prefers-color-scheme: dark) {
-  nav a:hover {
+  #navbar a:hover {
     background-color: var(--color-floral-white);
     color: var(--color-black-chocolate);
   }
 }
 @media (prefers-color-scheme: light) {
-  nav a:hover {
+  #navbar a:hover {
     background-color: var(--color-black-chocolate);
     color: var(--color-floral-white);
   }
 }
 @media (prefers-color-scheme: dark) {
-  nav a:active {
+  #navbar a:active {
     background-color: var(--color-floral-white);
     color: var(--color-black-chocolate);
   }
 }
 @media (prefers-color-scheme: light) {
-  nav a:active {
+  #navbar a:active {
     background-color: var(--color-black-chocolate);
     color: var(--color-floral-white);
   }

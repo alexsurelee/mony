@@ -1,9 +1,13 @@
-nav {
+#navbar {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 20px;
   background-color: var(--color-y-in-mn-blue);
   overflow: hidden;
+
+  h1 {
+    margin-left: 20px;
+  }
 
   a {
     text-decoration: none;
