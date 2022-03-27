@@ -11,7 +11,11 @@ export default function Index() {
   return (
     <Page>
       <div>
-        <p></p>
+        <h1>Welcome to KiwiBudget</h1>
+        <p>
+          KiwiBudget is currently in development. The expected launch date is
+          February 2023.
+        </p>
       </div>
     </Page>
   );
