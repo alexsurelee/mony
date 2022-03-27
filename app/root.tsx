@@ -10,9 +10,10 @@ import type { MetaFunction } from "remix";
 import type { LinksFunction } from "remix";
 
 import stylesUrl from "~/root.css";
+import NavBar, { links as navBarLinks } from "./components/NavBar/NavBar";
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: stylesUrl }];
+  return [...navBarLinks(), { rel: "stylesheet", href: stylesUrl }];
 };
 
 export const meta: MetaFunction = () => {
@@ -29,6 +30,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <NavBar />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
