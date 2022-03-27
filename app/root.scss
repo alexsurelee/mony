@@ -3,20 +3,15 @@
 
 * {
   font-family: "Manrope", sans-serif;
-  @media (prefers-color-scheme: dark) {
-    color: $cultured;
-  }
-  @media (prefers-color-scheme: light) {
-    color: $rich-black-fogra-39;
-  }
+  color: $text-color;
 }
 
 body {
   @media (prefers-color-scheme: dark) {
-    background-color: $rich-black-fogra-39;
+    background-color: $background-dark;
   }
   @media (prefers-color-scheme: light) {
-    background-color: $cultured;
+    background-color: $background-light;
   }
 }
 

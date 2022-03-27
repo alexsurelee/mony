@@ -1,5 +1,22 @@
-$rich-black-fogra-39: rgba(10, 9, 8, 1);
-$gunmetal: rgba(34, 51, 59, 1);
-$cultured: rgba(242, 244, 243, 1);
-$grullo: rgba(169, 146, 125, 1);
-$umber: rgba(94, 80, 63, 1);
+// Raw values
+$honey-yellow: #f6ae2dff;
+$ivory: #f9fbf2ff;
+$permanent-geranium-lake: #db3a34ff;
+$sea-green: #09814aff;
+$blue-sapphire: #28536bff;
+$pewter-blue: #7ea8beff;
+$charcoal: #373f51ff;
+
+// Semantic
+$warning: $honey-yellow;
+$error: $permanent-geranium-lake;
+$good: $sea-green;
+$background-light: $ivory;
+$background-dark: $charcoal;
+
+// Base values
+$text-color: $ivory;
+
+// Components
+$background-button: $blue-sapphire;
+$background-navbar: $blue-sapphire;

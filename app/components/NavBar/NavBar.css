@@ -1,5 +1,5 @@
 #navbar {
-  background-color: #22333b;
+  background-color: #28536bff;
   overflow: hidden;
 }
 #navbar a {
@@ -10,8 +10,8 @@
   text-decoration: none;
 }
 #navbar a:hover, #navbar a.active {
-  background-color: #f2f4f3;
-  color: #0a0908;
+  background-color: #28536bff;
+  color: #f9fbf2ff;
 }
 #navbar .hamburger {
   display: none;

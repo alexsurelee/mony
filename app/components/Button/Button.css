@@ -1,6 +1,6 @@
 .button {
-  color: #0a0908;
-  background-color: #5e503f;
+  color: #f9fbf2ff;
+  background-color: #28536bff;
   padding: 10px 40px;
   display: inline-block;
   text-decoration: none;
@@ -10,7 +10,7 @@
   border-radius: 5px;
 }
 .button:active {
-  background-color: #5e413f;
+  background-color: #286b62;
 }
 
 /*# sourceMappingURL=Button.css.map */

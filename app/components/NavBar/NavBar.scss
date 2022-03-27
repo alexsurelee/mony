@@ -1,7 +1,7 @@
 @import "../../styles/tokens";
 
 #navbar {
-  background-color: $gunmetal;
+  background-color: $background-navbar;
   overflow: hidden;
 
   a {
@@ -12,8 +12,8 @@
     text-decoration: none;
     &:hover,
     &.active {
-      background-color: $cultured;
-      color: $rich-black-fogra-39;
+      background-color: $background-navbar;
+      color: $text-color;
     }
   }
   .hamburger {

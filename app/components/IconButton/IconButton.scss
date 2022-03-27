@@ -1,10 +1,10 @@
 @import "../../styles/tokens";
 
 .icon-button {
-  background-color: $umber;
+  background-color: $background-button;
   border: none;
   cursor: pointer;
   &:hover {
-    background-color: $grullo;
+    background-color: adjust-hue($color: $background-button, $degrees: -30);
   }
 }
