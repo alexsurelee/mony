@@ -1,0 +1,17 @@
+@import "../../styles/tokens.scss";
+
+.button {
+  color: $rich-black-fogra-39;
+  background-color: $umber;
+  padding: 10px 40px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+
+  &:active {
+    background-color: adjust-hue($color: $umber, $degrees: -30);
+  }
+}

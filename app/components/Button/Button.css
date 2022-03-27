@@ -1,3 +1,16 @@
-
+.button {
+  color: #0a0908;
+  background-color: #5e503f;
+  padding: 10px 40px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.button:active {
+  background-color: #5e413f;
+}
 
 /*# sourceMappingURL=Button.css.map */
