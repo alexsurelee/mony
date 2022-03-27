@@ -1,38 +1,47 @@
 #navbar {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background-color: var(--color-y-in-mn-blue);
+  background-color: #22333b;
   overflow: hidden;
 }
-#navbar h1 {
-  margin-left: 20px;
-}
 #navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
-@media (prefers-color-scheme: dark) {
-  #navbar a:hover {
-    background-color: var(--color-floral-white);
-    color: var(--color-black-chocolate);
+#navbar a:hover, #navbar a.active {
+  background-color: #f2f4f3;
+  color: #0a0908;
+}
+#navbar .hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #navbar a:not(:first-child) {
+    display: none;
+  }
+
+  #navbar .hamburger {
+    float: right;
+    display: block;
   }
 }
-@media (prefers-color-scheme: light) {
-  #navbar a:hover {
-    background-color: var(--color-black-chocolate);
-    color: var(--color-floral-white);
+@media screen and (max-width: 600px) {
+  #navbar.open {
+    position: relative;
   }
-}
-@media (prefers-color-scheme: dark) {
-  #navbar a:active {
-    background-color: var(--color-floral-white);
-    color: var(--color-black-chocolate);
+
+  #navbar.open .hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
-}
-@media (prefers-color-scheme: light) {
-  #navbar a:active {
-    background-color: var(--color-black-chocolate);
-    color: var(--color-floral-white);
+
+  #navbar.open a {
+    float: none;
+    display: block;
+    text-align: left;
   }
 }
 

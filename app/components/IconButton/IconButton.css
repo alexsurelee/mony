@@ -1,0 +1,10 @@
+.icon-button {
+  background-color: #5e503f;
+  border: none;
+  cursor: pointer;
+}
+.icon-button:hover {
+  background-color: #a9927d;
+}
+
+/*# sourceMappingURL=IconButton.css.map */

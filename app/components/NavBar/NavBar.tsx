@@ -1,18 +1,29 @@
-import { Link, LinksFunction } from "remix";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { NavLink, Link, LinksFunction } from "remix";
 
 import stylesUrl from "~/components/NavBar/NavBar.css";
+import { links as iconButtonLinks } from "../IconButton/IconButton";
+import IconButton from "../IconButton/IconButton";
+import { useState } from "react";
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: stylesUrl }];
+  return [...iconButtonLinks(), { rel: "stylesheet", href: stylesUrl }];
 };
 
 export default function NavBar() {
+  const [isNavbarOpen, setNavbarOpen] = useState(false);
+
   return (
-    <nav id="navbar">
-      <h1>KiwiBudget</h1>
-      <Link to="/">Home</Link>
-      <Link to="/budget">Budget</Link>
-      <Link to="/accounts">Accounts</Link>
+    <nav id="navbar" className={isNavbarOpen ? "open" : undefined}>
+      <Link to="/">KiwiBudget</Link>
+      <NavLink to="/budget">Budget</NavLink>
+      <NavLink to="/accounts">Accounts</NavLink>
+      <IconButton
+        icon={faBars}
+        className="hamburger"
+        onClick={() => setNavbarOpen(!isNavbarOpen)}
+        size="2x"
+      />
     </nav>
   );
 }

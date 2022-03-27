@@ -1,27 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
-
-:root {
-  --color-floral-white: rgb(255, 248, 240);
-  --color-y-in-mn-blue: rgb(62, 81, 122);
-  --color-black-chocolate: rgb(29, 26, 5);
-}
+@import "./styles/tokens";
 
 * {
   font-family: "Manrope", sans-serif;
   @media (prefers-color-scheme: dark) {
-    color: var(--color-floral-white);
+    color: $cultured;
   }
   @media (prefers-color-scheme: light) {
-    color: var(--color-black-chocolate);
+    color: $rich-black-fogra-39;
   }
 }
 
 body {
   @media (prefers-color-scheme: dark) {
-    background-color: var(--color-black-chocolate);
+    background-color: $rich-black-fogra-39;
   }
   @media (prefers-color-scheme: light) {
-    background-color: var(--color-floral-white);
+    background-color: $cultured;
   }
 }
 
