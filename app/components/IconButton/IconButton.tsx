@@ -5,9 +5,10 @@ import {
 import { LinksFunction } from "remix";
 
 import stylesUrl from "~/components/IconButton/IconButton.css";
+import Button, { links as buttonLinks } from "../Button/Button";
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: stylesUrl }];
+  return [...buttonLinks(), { rel: "stylesheet", href: stylesUrl }];
 };
 
 export interface IconButtonProps {
@@ -26,14 +27,14 @@ export interface IconButtonProps {
   /**
    * Size of the icon.
    */
-  size: FontAwesomeIconProps["size"];
+  size?: FontAwesomeIconProps["size"];
 }
 
 export default function IconButton(props: IconButtonProps) {
   const { icon, onClick, className, size } = props;
   return (
-    <button className={`icon-button ${className}`} onClick={onClick}>
+    <Button className={`icon-button ${className}`} onClick={onClick}>
       <FontAwesomeIcon icon={icon} size={size} />
-    </button>
+    </Button>
   );
 }

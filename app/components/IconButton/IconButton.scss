@@ -1,10 +1,11 @@
 @import "../../styles/tokens";
 
 .icon-button {
-  background-color: $background-button;
+  background-color: $background-navbar;
+  padding: 14px 16px;
   border: none;
   cursor: pointer;
   &:hover {
-    background-color: adjust-hue($color: $background-button, $degrees: -30);
+    background-color: $background-button-active;
   }
 }

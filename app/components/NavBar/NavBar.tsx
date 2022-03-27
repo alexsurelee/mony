@@ -22,7 +22,6 @@ export default function NavBar() {
         icon={faBars}
         className="hamburger"
         onClick={() => setNavbarOpen(!isNavbarOpen)}
-        size="2x"
       />
     </nav>
   );

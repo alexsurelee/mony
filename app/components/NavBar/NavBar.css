@@ -10,7 +10,7 @@
   text-decoration: none;
 }
 #navbar a:hover, #navbar a.active {
-  background-color: #28536bff;
+  background-color: #537e95ff;
   color: #f9fbf2ff;
 }
 #navbar .hamburger {

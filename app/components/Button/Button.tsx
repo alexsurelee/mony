@@ -7,9 +7,25 @@ export const links: LinksFunction = () => {
 };
 
 export interface ButtonProps {
+  /**
+   * What goes in the button.
+   */
   children: React.ReactChild;
+  /**
+   * Class names to be applied to the HTML `<button />`.
+   */
+  className?: string;
+  /**
+   * The `onClick` method to be used by the HTML `<button />`.
+   */
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 export default function Button(props: ButtonProps) {
-  return <button className="button">{props.children}</button>;
+  const { children, className, onClick } = props;
+  return (
+    <button onClick={onClick} className={"button" && className}>
+      {children}
+    </button>
+  );
 }

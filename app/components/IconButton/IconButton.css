@@ -1,10 +1,11 @@
 .icon-button {
   background-color: #28536bff;
+  padding: 14px 16px;
   border: none;
   cursor: pointer;
 }
 .icon-button:hover {
-  background-color: #286b62;
+  background-color: #537e95ff;
 }
 
 /*# sourceMappingURL=IconButton.css.map */
