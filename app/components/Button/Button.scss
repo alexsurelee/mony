@@ -11,7 +11,11 @@
   font-weight: bold;
   border-radius: 5px;
 
+  &:hover {
+    background-color: $background-button-hover;
+  }
+
   &:active {
-    background-color: adjust-hue($color: $background-button, $degrees: -30);
+    background-color: $background-button-active;
   }
 }

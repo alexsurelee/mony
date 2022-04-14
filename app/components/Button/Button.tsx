@@ -1,4 +1,5 @@
 import { LinksFunction } from "remix";
+import classNames from "classnames";
 
 import stylesUrl from "~/components/Button/Button.css";
 
@@ -24,7 +25,7 @@ export interface ButtonProps {
 export default function Button(props: ButtonProps) {
   const { children, className, onClick } = props;
   return (
-    <button onClick={onClick} className={"button" && className}>
+    <button onClick={onClick} className={classNames("button", className)}>
       {children}
     </button>
   );

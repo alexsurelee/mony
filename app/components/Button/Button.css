@@ -9,8 +9,11 @@
   font-weight: bold;
   border-radius: 5px;
 }
+.button:hover {
+  background-color: #537e95ff;
+}
 .button:active {
-  background-color: #286b62;
+  background-color: #7ea8beff;
 }
 
 /*# sourceMappingURL=Button.css.map */

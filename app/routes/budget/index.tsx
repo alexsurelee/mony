@@ -12,7 +12,6 @@ export default function Budget() {
   return (
     <div>
       <h1>This is yo budget</h1>
-      <Button>Syubmit</Button>
     </div>
   );
 }
