@@ -1,6 +1,7 @@
 import {
   Links,
   LiveReload,
+  LoaderFunction,
   Meta,
   Outlet,
   Scripts,
@@ -8,6 +9,8 @@ import {
 } from "remix";
 import type { MetaFunction } from "remix";
 import type { LinksFunction } from "remix";
+import { ClerkApp, ClerkCatchBoundary } from "@clerk/remix";
+import { rootAuthLoader } from "@clerk/remix/ssr.server";
 
 import stylesUrl from "~/root.css";
 import NavBar, { links as navBarLinks } from "./components/NavBar/NavBar";
@@ -20,7 +23,12 @@ export const meta: MetaFunction = () => {
   return { title: "KiwiBudget" };
 };
 
-export default function App() {
+export const loader: LoaderFunction = (args) =>
+  rootAuthLoader(args, { loadUser: true });
+
+export const CatchBoundary = ClerkCatchBoundary();
+
+function App() {
   return (
     <html lang="en-NZ">
       <head>
@@ -39,3 +47,5 @@ export default function App() {
     </html>
   );
 }
+
+export default ClerkApp(App);
