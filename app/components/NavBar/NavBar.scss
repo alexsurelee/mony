@@ -3,6 +3,7 @@
 #navbar {
   background-color: $background-navbar;
   overflow: hidden;
+  color: $text-color;
 
   a {
     float: left;
@@ -10,12 +11,19 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: $text-color;
     &:hover,
     &.active {
       background-color: $background-button-active;
-      color: $text-color;
     }
   }
+  .cl-user-button {
+    display: block;
+    float: right;
+    margin-top: 7px;
+    margin-right: 8px;
+  }
+
   .hamburger {
     display: none;
   }
@@ -23,6 +31,9 @@
 
 @media screen and (max-width: 600px) {
   #navbar a:not(:first-child) {
+    display: none;
+  }
+  #navbar .cl-user-button {
     display: none;
   }
   #navbar .hamburger {

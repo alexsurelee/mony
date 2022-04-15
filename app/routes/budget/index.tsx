@@ -12,8 +12,9 @@ export const links: LinksFunction = () => {
 export const loader: LoaderFunction = async ({ request }) => {
   const { userId, sessionId } = await getAuth(request);
   if (!userId) {
-    return redirect("https://accounts.foo.bar.lcl.dev/sign-in");
+    return redirect("sign-in");
   }
+  return null;
 };
 
 export default function Budget() {

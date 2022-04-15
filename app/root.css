@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 * {
   font-family: "Manrope", sans-serif;
-  color: #f9fbf2ff;
 }
 
 @media (prefers-color-scheme: dark) {

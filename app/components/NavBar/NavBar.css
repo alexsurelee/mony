@@ -1,6 +1,7 @@
 #navbar {
   background-color: #28536bff;
   overflow: hidden;
+  color: #f9fbf2ff;
 }
 #navbar a {
   float: left;
@@ -8,10 +9,16 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  color: #f9fbf2ff;
 }
 #navbar a:hover, #navbar a.active {
   background-color: #7ea8beff;
-  color: #f9fbf2ff;
+}
+#navbar .cl-user-button {
+  display: block;
+  float: right;
+  margin-top: 7px;
+  margin-right: 8px;
 }
 #navbar .hamburger {
   display: none;
@@ -19,6 +26,10 @@
 
 @media screen and (max-width: 600px) {
   #navbar a:not(:first-child) {
+    display: none;
+  }
+
+  #navbar .cl-user-button {
     display: none;
   }
 

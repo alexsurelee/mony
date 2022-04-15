@@ -33,7 +33,7 @@ export default function Button(props: ButtonProps) {
   );
 
   if (to) {
-    <Link to={to}>{button}</Link>;
+    return <Link to={to}>{button}</Link>;
   }
   return button;
 }

@@ -5,6 +5,7 @@ import stylesUrl from "~/components/NavBar/NavBar.css";
 import { links as iconButtonLinks } from "../IconButton/IconButton";
 import IconButton from "../IconButton/IconButton";
 import { useState } from "react";
+import { UserButton } from "@clerk/remix";
 
 export const links: LinksFunction = () => {
   return [...iconButtonLinks(), { rel: "stylesheet", href: stylesUrl }];
@@ -23,6 +24,7 @@ export default function NavBar() {
         className="hamburger"
         onClick={() => setNavbarOpen(!isNavbarOpen)}
       />
+      <UserButton />
     </nav>
   );
 }
