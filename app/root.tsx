@@ -1,16 +1,6 @@
-import {
-  Link,
-  Links,
-  LiveReload,
-  LoaderFunction,
-  Meta,
-  NavLink,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "remix";
-import type { MetaFunction } from "remix";
-import type { LinksFunction } from "remix";
+import type { LinksFunction, MetaFunction } from "@remix-run/node";
+import { LoaderFunction } from "@remix-run/node";
+import { Link, Links, LiveReload, Meta, NavLink, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 import { ClerkApp, ClerkCatchBoundary, UserButton } from "@clerk/remix";
 import { rootAuthLoader } from "@clerk/remix/ssr.server";
 import {
