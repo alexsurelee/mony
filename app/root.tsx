@@ -11,7 +11,7 @@ import {
 } from "remix";
 import type { MetaFunction } from "remix";
 import type { LinksFunction } from "remix";
-import { ClerkApp, ClerkCatchBoundary } from "@clerk/remix";
+import { ClerkApp, ClerkCatchBoundary, UserButton } from "@clerk/remix";
 import { rootAuthLoader } from "@clerk/remix/ssr.server";
 import {
   MantineProvider,
@@ -56,7 +56,10 @@ function App() {
           />
         </MediaQuery>
 
-        <Text>KiwiBudget</Text>
+        <Anchor component={Link} to="/" variant="text">
+          KiwiBudget
+        </Anchor>
+        <UserButton />
       </div>
     </Header>
   );
@@ -69,15 +72,12 @@ function App() {
       hidden={!opened}
       width={{ sm: 100, lg: 200 }}
     >
-      <Navbar.Section>ppoop</Navbar.Section>
-      <Navbar.Section grow>
-        <Button component={NavLink} fullWidth variant="subtle" to="/budget">
-          Budget
-        </Button>
-        <Button component={NavLink} fullWidth variant="subtle" to="/accounts">
-          Accounts
-        </Button>
-      </Navbar.Section>
+      <Button component={NavLink} fullWidth variant="subtle" to="/budget">
+        Budget
+      </Button>
+      <Button component={NavLink} fullWidth variant="subtle" to="/accounts">
+        Accounts
+      </Button>
     </Navbar>
   );
 
@@ -91,7 +91,7 @@ function App() {
       </head>
       <body>
         <MantineProvider withCSSVariables withNormalizeCSS withGlobalStyles>
-          <AppShell navbar={navbar} header={header}>
+          <AppShell fixed navbar={navbar} header={header}>
             <Outlet />
           </AppShell>
         </MantineProvider>

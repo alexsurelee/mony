@@ -1,4 +1,4 @@
-import { Button } from "@mantine/core";
+import { Button, Group } from "@mantine/core";
 import { Link, LinksFunction } from "remix";
 
 import styles from "~/routes/index/index.css";
@@ -15,9 +15,14 @@ export default function Index() {
         KiwiBudget is currently in development. The expected launch date is
         February 2023.
       </p>
-      <Link to="sign-up">
-        <Button>Sign Up</Button>
-      </Link>
+      <Group>
+        <Button component={Link} to="/sign-up">
+          Sign Up
+        </Button>
+        <Button component={Link} to="/sign-in">
+          Sign In
+        </Button>
+      </Group>
     </div>
   );
 }
