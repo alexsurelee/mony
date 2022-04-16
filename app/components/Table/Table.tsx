@@ -1,4 +1,4 @@
-import { LinksFunction } from "remix";
+import { LinksFunction } from "@remix-run/node";
 import classNames from "classnames";
 
 import stylesUrl from "~/components/Table/Table.css";

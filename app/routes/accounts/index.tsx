@@ -1,4 +1,4 @@
-import { LinksFunction, LoaderFunction, redirect } from "remix";
+import { LinksFunction, LoaderFunction, redirect } from "@remix-run/node";
 
 import styles from "~/routes/accounts/Accounts.css";
 import { getAuth } from "@clerk/remix/ssr.server";
