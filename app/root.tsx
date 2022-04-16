@@ -19,13 +19,17 @@ import {
   Navbar,
   Header,
   Anchor,
+  MediaQuery,
+  Text,
+  Burger,
+  Button,
 } from "@mantine/core";
 
 import stylesUrl from "~/root.css";
-import NavBar, { links as navBarLinks } from "./components/NavBar/NavBar";
+import { useState } from "react";
 
 export const links: LinksFunction = () => {
-  return [...navBarLinks(), { rel: "stylesheet", href: stylesUrl }];
+  return [{ rel: "stylesheet", href: stylesUrl }];
 };
 
 export const meta: MetaFunction = () => {
@@ -38,39 +42,64 @@ export const loader: LoaderFunction = (args) =>
 export const CatchBoundary = ClerkCatchBoundary();
 
 function App() {
+  const [opened, setOpened] = useState(false);
+
+  const header = (
+    <Header height={70} p="md">
+      <div style={{ display: "flex", alignItems: "center", height: "100%" }}>
+        <MediaQuery largerThan="sm" styles={{ display: "none" }}>
+          <Burger
+            opened={opened}
+            onClick={() => setOpened((o) => !o)}
+            size="sm"
+            mr="xl"
+          />
+        </MediaQuery>
+
+        <Text>KiwiBudget</Text>
+      </div>
+    </Header>
+  );
+
+  const navbar = (
+    <Navbar
+      p="md"
+      fixed
+      hiddenBreakpoint="sm"
+      hidden={!opened}
+      width={{ sm: 100, lg: 200 }}
+    >
+      <Navbar.Section>ppoop</Navbar.Section>
+      <Navbar.Section grow>
+        <Button component={NavLink} fullWidth variant="subtle" to="/budget">
+          Budget
+        </Button>
+        <Button component={NavLink} fullWidth variant="subtle" to="/accounts">
+          Accounts
+        </Button>
+      </Navbar.Section>
+    </Navbar>
+  );
+
   return (
-    <MantineProvider withCSSVariables withNormalizeCSS withGlobalStyles>
-      <html lang="en-NZ">
-        <head>
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width,initial-scale=1" />
-          <Meta />
-          <Links />
-        </head>
-        <body>
-          <AppShell
-            header={
-              <Header height={60} p="xs">
-                <Anchor component={Link} to="/">
-                  KiwiBudget
-                </Anchor>
-                <Anchor component={NavLink} to="/budget">
-                  Budget
-                </Anchor>
-                <Anchor component={NavLink} to="/accounts">
-                  Accounts
-                </Anchor>
-              </Header>
-            }
-          >
+    <html lang="en-NZ">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        <MantineProvider withCSSVariables withNormalizeCSS withGlobalStyles>
+          <AppShell navbar={navbar} header={header}>
             <Outlet />
           </AppShell>
-          <ScrollRestoration />
-          <Scripts />
-          <LiveReload />
-        </body>
-      </html>
-    </MantineProvider>
+        </MantineProvider>
+        <ScrollRestoration />
+        <Scripts />
+        <LiveReload />
+      </body>
+    </html>
   );
 }
 
