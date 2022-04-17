@@ -9,7 +9,9 @@
     "dev": "concurrently \"npm run sass\" \"cross-env NODE_ENV=development netlify dev\"",
     "start": "cross-env NODE_ENV=production netlify dev",
     "sass": "sass --watch app/:app/",
-    "commit": "cz"
+    "commit": "cz",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@clerk/remix": "^0.3.7",
@@ -40,13 +42,22 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.9",
     "@remix-run/dev": "^1.3.3",
     "@remix-run/eslint-config": "^1.3.3",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/react": "^6.4.22",
+    "@storybook/testing-library": "^0.0.9",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
+    "babel-loader": "^8.2.4",
     "concurrently": "^7.0.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.9.0",
+    "eslint-plugin-storybook": "^0.5.10",
     "sass": "^1.49.9",
     "typescript": "^4.5.5"
   },
