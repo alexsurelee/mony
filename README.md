@@ -2,6 +2,8 @@
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1f391d65-ad8f-4851-948c-3f1272ac0677/deploy-status)](https://app.netlify.com/sites/mony-nz/deploys)
+
 ## Netlify Setup
 
 1. Install the [Netlify CLI](https://www.netlify.com/products/dev/):
