@@ -1,6 +1,6 @@
 import { UserButton } from "@clerk/remix";
 import { LinksFunction } from "@remix-run/node";
-import { NavLink } from "@remix-run/react";
+import { Link, NavLink } from "@remix-run/react";
 
 import stylesUrl from "~/components/navbar/navbar.css";
 
@@ -10,21 +10,11 @@ export const links: LinksFunction = () => {
 
 export default function Navbar() {
   return (
-    <nav>
-      <ul>
-        <li>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/budget">Budget</NavLink>
-        </li>
-        <li>
-          <NavLink to="/accounts">Accounts</NavLink>
-        </li>
-        <li>
-          <UserButton />
-        </li>
-      </ul>
+    <nav className="topnav">
+      <Link to="/">Home</Link>
+      <NavLink to="/budget">Budget</NavLink>
+      <NavLink to="/accounts">Accounts</NavLink>
+      <UserButton />
     </nav>
   );
 }

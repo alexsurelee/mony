@@ -40,7 +40,9 @@ function App() {
       </head>
       <body>
         <Navbar />
-        <Outlet />
+        <main>
+          <Outlet />
+        </main>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

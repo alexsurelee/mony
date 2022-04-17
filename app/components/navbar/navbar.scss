@@ -1,0 +1,25 @@
+@import "../../styles/tokens.scss";
+
+.topnav {
+  background-color: $background-navbar;
+  display: inline-flex;
+  width: 100vw;
+
+  a {
+    text-decoration: none;
+    background-color: $background-button;
+    color: $text-color;
+    text-align: center;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+
+    &.active {
+      background-color: $background-button-active;
+    }
+
+    &:hover {
+      background-color: $background-button-hover;
+    }
+  }
+}
