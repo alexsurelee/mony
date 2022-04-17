@@ -1,6 +1,6 @@
 import { LinksFunction, LoaderFunction, redirect } from "@remix-run/node";
 
-import styles from "~/routes/budget/Budget.css";
+import styles from "~/routes/budget/budget.css";
 import { getAuth } from "@clerk/remix/ssr.server";
 
 export const links: LinksFunction = () => {
