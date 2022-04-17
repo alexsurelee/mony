@@ -11,10 +11,10 @@ export const links: LinksFunction = () => {
 export default function Index() {
   return (
     <div>
-      <h1>Welcome to KiwiBudget</h1>
+      <h1>Welcome to Mony</h1>
       <p>
-        KiwiBudget is currently in development. The expected launch date is
-        February 2023.
+        Mony is currently in development. The expected launch date is February
+        2023.
       </p>
       <Group>
         <Button component={Link} to="/sign-up">
