@@ -1,3 +1,4 @@
+import { UserButton } from "@clerk/remix";
 import { LinksFunction } from "@remix-run/node";
 import { NavLink } from "@remix-run/react";
 
@@ -19,6 +20,9 @@ export default function Navbar() {
         </li>
         <li>
           <NavLink to="/accounts">Accounts</NavLink>
+        </li>
+        <li>
+          <UserButton />
         </li>
       </ul>
     </nav>
