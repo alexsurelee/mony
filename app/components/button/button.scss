@@ -1,0 +1,23 @@
+@import "../../styles/tokens.scss";
+
+button {
+  background-color: $background-button;
+  color: $text-color;
+  padding: 0.7rem 2rem;
+  display: inline-block;
+  border-radius: 7px;
+  transition: all 0.2s;
+  position: relative;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 1px 2px rgba($charcoal, 0.2);
+    background-color: $background-button-hover;
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba($charcoal, 0.2);
+  }
+}

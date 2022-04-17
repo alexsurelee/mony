@@ -1,11 +1,12 @@
 import { LinksFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
+import { Button, links as buttonLinks } from "~/components/button/button";
 import Navbar from "~/components/navbar/navbar";
 
 import styles from "~/routes/index/index.css";
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: styles }];
+  return [...buttonLinks(), { rel: "stylesheet", href: styles }];
 };
 
 export default function Index() {
@@ -16,8 +17,14 @@ export default function Index() {
         Mony is currently in development. The expected launch date is February
         2023.
       </p>
-      <Link to="/sign-up">Sign Up</Link>
-      <Link to="/sign-in">Sign In</Link>
+      <div className="button-group">
+        <Button variant="link" to="/sign-up">
+          Sign Up
+        </Button>
+        <Button variant="link" to="/sign-in">
+          Sign In
+        </Button>
+      </div>
     </div>
   );
 }
