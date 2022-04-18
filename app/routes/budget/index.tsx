@@ -8,7 +8,6 @@ export const links: LinksFunction = () => {
 };
 
 export const loader: LoaderFunction = async ({ request }) => {
-  console.log("budget loader");
   const { userId } = await getAuth(request);
   if (!userId) {
     return redirect("/sign-in?redirect_url=" + request.url);

@@ -24,7 +24,8 @@ export const meta: MetaFunction = () => {
   return { title: "Mony" };
 };
 
-export const loader: LoaderFunction = (args) => rootAuthLoader(args);
+export const loader: LoaderFunction = (args) =>
+  rootAuthLoader(args, { loadUser: true });
 
 export const CatchBoundary = ClerkCatchBoundary();
 
