@@ -1,7 +1,5 @@
 import { LinksFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
 import { Button, links as buttonLinks } from "~/components/button/button";
-import Navbar from "~/components/navbar/navbar";
 
 import styles from "~/routes/index/index.css";
 

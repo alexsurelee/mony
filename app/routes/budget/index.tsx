@@ -12,7 +12,7 @@ export const loader: LoaderFunction = async ({ request }) => {
   if (!userId) {
     return redirect("/sign-in?redirect_url=" + request.url);
   }
-  return null;
+  return userId;
 };
 
 export default function Budget() {
