@@ -10,7 +10,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import { ClerkApp, ClerkCatchBoundary, UserButton } from "@clerk/remix";
+import { ClerkApp, ClerkCatchBoundary } from "@clerk/remix";
 import { rootAuthLoader } from "@clerk/remix/ssr.server";
 
 import stylesUrl from "~/root.css";
@@ -24,8 +24,7 @@ export const meta: MetaFunction = () => {
   return { title: "Mony" };
 };
 
-export const loader: LoaderFunction = (args) =>
-  rootAuthLoader(args, { loadUser: true });
+export const loader: LoaderFunction = (args) => rootAuthLoader(args);
 
 export const CatchBoundary = ClerkCatchBoundary();
 
