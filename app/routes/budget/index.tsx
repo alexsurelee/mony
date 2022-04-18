@@ -1,6 +1,6 @@
 import { json, LinksFunction, LoaderFunction, redirect } from "@remix-run/node";
 
-import styles from "~/routes/budget/budget.css";
+import styles from "~/styles/routes/budget/budget.css";
 import { getAuth } from "@clerk/remix/ssr.server";
 
 export const links: LinksFunction = () => {
@@ -8,6 +8,7 @@ export const links: LinksFunction = () => {
 };
 
 export const loader: LoaderFunction = async ({ request }) => {
+  console.log("budget loader");
   const { userId } = await getAuth(request);
   if (!userId) {
     return redirect("/sign-in?redirect_url=" + request.url);

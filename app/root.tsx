@@ -13,7 +13,7 @@ import {
 import { ClerkApp, ClerkCatchBoundary } from "@clerk/remix";
 import { rootAuthLoader } from "@clerk/remix/ssr.server";
 
-import stylesUrl from "~/root.css";
+import stylesUrl from "~/styles/routes/root/root.css";
 import Navbar, { links as navbarLinks } from "./components/navbar/navbar";
 
 export const links: LinksFunction = () => {

@@ -1,7 +1,7 @@
 import { LinksFunction } from "@remix-run/node";
 import classNames from "classnames";
 
-import stylesUrl from "~/components/Table/Table.css";
+import stylesUrl from "~/styles/components/table/table.css";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: stylesUrl }];

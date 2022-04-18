@@ -1,6 +1,6 @@
 import { LinksFunction } from "@remix-run/node";
 import { ReactChild } from "react";
-import stylesUrl from "./button.css";
+import stylesUrl from "~/styles/components/button/button.css";
 import { Link, NavLink, RemixLinkProps } from "@remix-run/react/components";
 
 export const links: LinksFunction = () => {
