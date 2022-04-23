@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["navbar.scss","../../tokens.scss"],"names":[],"mappings":"AAEA;EACE,kBCEc;EDDd;EACA;;AAEA;EACE;EACA,kBCJY;EDKZ,OCRI;EDSJ;EACA;EACA;EACA;;AAEA;EACE,kBCVQ;;ADaV;EACE,kBCfM","file":"navbar.css"}
+{"version":3,"sourceRoot":"","sources":["navbar.scss","../../tokens.scss"],"names":[],"mappings":"AAIA;EACE;EACA;EACA;;AAEA;EACE;EACA,kBCNY;EDOZ,OCVI;EDWJ;EACA;EACA,QAbY;EAcZ,aAdY;EAeZ;;AAEA;EACE,kBCbQ;;ADgBV;EACE,kBClBM;;ADsBV;EACE;EACA,QA5BY;EA6BZ;;AACA;EACE","file":"navbar.css"}

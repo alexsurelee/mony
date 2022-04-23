@@ -14,7 +14,9 @@ export default function Navbar() {
       <Link to="/">Home</Link>
       <NavLink to="/budget">Budget</NavLink>
       <NavLink to="/accounts">Accounts</NavLink>
-      <UserButton />
+      <div className="user-button-wrapper">
+        <UserButton />
+      </div>
     </nav>
   );
 }
