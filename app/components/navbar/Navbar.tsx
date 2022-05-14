@@ -1,14 +1,14 @@
 import { UserButton } from "@clerk/remix";
-import { LinksFunction } from "@remix-run/node";
+import type { LinksFunction } from "@remix-run/node";
 import { Link, NavLink } from "@remix-run/react";
 
-import stylesUrl from "~/styles/components/navbar/navbar.css";
+import stylesUrl from "app/styles/components/navbar/navbar.css";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: stylesUrl }];
 };
 
-export default function Navbar() {
+export function Navbar() {
   return (
     <nav className="topnav">
       <Link to="/">Home</Link>

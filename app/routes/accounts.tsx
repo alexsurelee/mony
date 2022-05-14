@@ -1,6 +1,7 @@
-import { json, LinksFunction, LoaderFunction, redirect } from "@remix-run/node";
+import type { LinksFunction, LoaderFunction } from "@remix-run/node";
+import { json, redirect } from "@remix-run/node";
 
-import styles from "~/styles/routes/budget/budget.css";
+import styles from "~/styles/routes/accounts/accounts.css";
 import { getAuth } from "@clerk/remix/ssr.server";
 
 export const links: LinksFunction = () => {
@@ -15,10 +16,10 @@ export const loader: LoaderFunction = async ({ request }) => {
   return json({ ok: true });
 };
 
-export default function Budget() {
+export default function Accounts() {
   return (
     <div>
-      <h1>This is yo budget</h1>
+      <h1>This is yo Accounts</h1>
     </div>
   );
 }

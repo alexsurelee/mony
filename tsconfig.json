@@ -10,11 +10,11 @@
     "target": "ES2019",
     "strict": true,
     "baseUrl": ".",
+    "noEmit": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
     "paths": {
       "~/*": ["./app/*"]
-    },
-
-    // Remix takes care of building everything in `remix build`.
-    "noEmit": true
+    }
   }
 }

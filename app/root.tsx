@@ -1,11 +1,9 @@
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
-import { LoaderFunction } from "@remix-run/node";
+import type { LoaderFunction } from "@remix-run/node";
 import {
-  Link,
   Links,
   LiveReload,
   Meta,
-  NavLink,
   Outlet,
   Scripts,
   ScrollRestoration,
@@ -13,8 +11,8 @@ import {
 import { ClerkApp, ClerkCatchBoundary } from "@clerk/remix";
 import { rootAuthLoader } from "@clerk/remix/ssr.server";
 
-import stylesUrl from "~/styles/routes/root/root.css";
-import Navbar, { links as navbarLinks } from "./components/navbar/navbar";
+import stylesUrl from "app/styles/routes/root/root.css";
+import { Navbar, links as navbarLinks } from "./components/navbar/Navbar";
 
 export const links: LinksFunction = () => {
   return [...navbarLinks(), { rel: "stylesheet", href: stylesUrl }];

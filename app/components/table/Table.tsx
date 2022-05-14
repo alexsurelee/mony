@@ -1,7 +1,7 @@
-import { LinksFunction } from "@remix-run/node";
+import type { LinksFunction } from "@remix-run/node";
 import classNames from "classnames";
 
-import stylesUrl from "~/styles/components/table/table.css";
+import stylesUrl from "app/styles/components/table/table.css";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: stylesUrl }];
@@ -12,7 +12,7 @@ export interface TableProps {
   children: React.ReactChild;
 }
 
-export default function Table(props: TableProps) {
+export function Table(props: TableProps) {
   const { className, children } = props;
   return <table className={classNames("table", className)}>{children}</table>;
 }
