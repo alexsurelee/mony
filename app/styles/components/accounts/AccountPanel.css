@@ -1,0 +1,20 @@
+.account-panel {
+  border: 1px solid #373f51;
+  border-radius: 5px;
+  width: fit-content;
+  min-width: 200px;
+  min-height: 40px;
+  display: flex;
+}
+.account-panel--name {
+  border-right: 1px solid #373f51;
+  height: 100%;
+  width: fit-content;
+  min-width: 30px;
+  padding: 5px;
+}
+.account-panel--balance {
+  padding: 5px;
+}
+
+/*# sourceMappingURL=AccountPanel.css.map */
