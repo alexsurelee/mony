@@ -4,7 +4,7 @@ import { json, redirect } from "@remix-run/node";
 import styles from "~/styles/routes/accounts/accounts.css";
 import { getAuth } from "@clerk/remix/ssr.server";
 import type { Account } from "akahu";
-import { useLoaderData } from "@remix-run/react";
+import { Link, useLoaderData } from "@remix-run/react";
 import {
   AccountPanel,
   links as accountPanelLinks,
@@ -36,11 +36,10 @@ export default function Accounts() {
         {accounts.map((account: Account) => {
           const { _id, name, balance } = account;
           return (
-            <AccountPanel
-              key={_id}
-              name={name}
-              balance={balance?.current || 0}
-            />
+            <div key={_id}>
+              <Link to={_id}>Link</Link>
+              <AccountPanel name={name} balance={balance?.current || 0} />
+            </div>
           );
         })}
       </div>
