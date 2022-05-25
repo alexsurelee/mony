@@ -5,20 +5,10 @@ const userToken = process.env.AKAHU_USER_TOKEN || "";
 
 const akahu = new AkahuClient({ appToken });
 
-export async function getAccounts() {
-  const accounts = await akahu.accounts.list(userToken);
-  return accounts;
-}
+export const getAccounts = () => akahu.accounts.list(userToken);
 
-export async function getAccount(accountId: string) {
-  const account = await akahu.accounts.get(userToken, accountId);
-  return account;
-}
+export const getAccount = (accountId: string) =>
+  akahu.accounts.get(userToken, accountId);
 
-export async function listTransactions(accountId: string) {
-  const transactions = await akahu.accounts.listTransactions(
-    userToken,
-    accountId
-  );
-  return transactions;
-}
+export const listTransactions = (accountId: string) =>
+  akahu.accounts.listTransactions(userToken, accountId);

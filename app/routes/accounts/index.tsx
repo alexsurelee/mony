@@ -36,10 +36,9 @@ export default function Accounts() {
         {accounts.map((account: Account) => {
           const { _id, name, balance } = account;
           return (
-            <div key={_id}>
-              <Link to={_id}>Link</Link>
+            <Link key={_id} to={_id}>
               <AccountPanel name={name} balance={balance?.current || 0} />
-            </div>
+            </Link>
           );
         })}
       </div>

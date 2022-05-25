@@ -5,14 +5,14 @@ import styles from "~/styles/routes/accounts/accounts.css";
 import { getAuth } from "@clerk/remix/ssr.server";
 import type { Account, Paginated, Transaction } from "akahu";
 import { useLoaderData } from "@remix-run/react";
+import { getAccount, listTransactions } from "~/helpers/akahu";
 import {
-  AccountPanel,
-  links as accountPanelLinks,
-} from "~/components/accounts/AccountPanel";
-import { getAccount, getAccounts, listTransactions } from "~/helpers/akahu";
+  TransactionList,
+  links as transactionListLinks,
+} from "~/components/accounts/TransactionList";
 
 export const links: LinksFunction = () => {
-  return [...accountPanelLinks(), { rel: "stylesheet", href: styles }];
+  return [...transactionListLinks(), { rel: "stylesheet", href: styles }];
 };
 
 type LoaderData = { account: Account; transactions: Paginated<Transaction> };
@@ -41,18 +41,7 @@ export default function AccountPage() {
   return (
     <>
       <h1>{account.name}</h1>
-      <div className="transactions-list">
-        {transactions.items.map((transaction) => (
-          <div key={transaction._id} className="transaction">
-            <div className="transaction--date">{transaction.date}</div>
-            <div className="transaction--amount">{transaction.amount}</div>
-            <div className="transaction--description">
-              {transaction.description}
-            </div>
-            <div className="transaction--type">{transaction.type}</div>
-          </div>
-        ))}
-      </div>
+      <TransactionList transactions={transactions} />
     </>
   );
 }
