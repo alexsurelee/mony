@@ -4,7 +4,7 @@ import { json, redirect } from "@remix-run/node";
 import styles from "~/styles/routes/accounts/accounts.css";
 import { getAuth } from "@clerk/remix/ssr.server";
 import type { Account } from "akahu";
-import { Link, useLoaderData } from "@remix-run/react";
+import { Link, Outlet, useLoaderData } from "@remix-run/react";
 import {
   AccountPanel,
   links as accountPanelLinks,
@@ -14,6 +14,16 @@ import { getAccounts } from "~/helpers/akahu";
 export const links: LinksFunction = () => {
   return [...accountPanelLinks(), { rel: "stylesheet", href: styles }];
 };
+
+export function ErrorBoundary({ error }) {
+  console.error(error);
+  return (
+    <div>
+      <h2>There was a problemo 😭</h2>
+      <div>{error.message}</div>
+    </div>
+  );
+}
 
 export const loader: LoaderFunction = async ({ request }) => {
   // Authenticated users only
