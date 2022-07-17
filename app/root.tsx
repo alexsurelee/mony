@@ -13,6 +13,7 @@ import { rootAuthLoader } from "@clerk/remix/ssr.server";
 
 import stylesUrl from "app/styles/routes/root/root.css";
 import { Navbar, links as navbarLinks } from "./components/navbar/Navbar";
+import { AppShell } from "@mantine/core";
 
 export const links: LinksFunction = () => {
   return [...navbarLinks(), { rel: "stylesheet", href: stylesUrl }];
@@ -39,7 +40,9 @@ function App() {
       <body>
         <Navbar />
         <main>
-          <Outlet />
+          <AppShell>
+            <Outlet />
+          </AppShell>
         </main>
         <ScrollRestoration />
         <Scripts />

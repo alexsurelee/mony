@@ -1,5 +1,6 @@
 import type { LinksFunction } from "@remix-run/node";
 import type { Paginated, Transaction } from "akahu";
+import { Table } from "@mantine/core";
 
 import stylesUrl from "app/styles/components/accounts/TransactionList.css";
 
@@ -13,7 +14,7 @@ type TransactionListProps = {
 
 export const TransactionList = ({ transactions }: TransactionListProps) => {
   return (
-    <table className="transaction-list">
+    <Table>
       <thead>
         <tr>
           <th>Date</th>
@@ -38,6 +39,6 @@ export const TransactionList = ({ transactions }: TransactionListProps) => {
           );
         })}
       </tbody>
-    </table>
+    </Table>
   );
 };
