@@ -1,7 +1,7 @@
 import { UserButton } from "@clerk/remix";
 import { Link, NavLink } from "@remix-run/react";
 
-export function Navbar() {
+export function MonyHeader() {
   return (
     <nav className="topnav">
       <Link to="/">Home</Link>

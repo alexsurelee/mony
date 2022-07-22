@@ -1,20 +1,21 @@
-import { Button } from "app/components/button/Button";
+import { Text, Title } from "@mantine/core";
+import { MonyButton } from "app/components/button/MonyButton";
 
 export default function Index() {
   return (
     <div>
-      <h1>Welcome to Mony</h1>
-      <p>
+      <Title>Welcome to Mony</Title>
+      <Text>
         Mony is currently in development. The expected launch date is February
         2023.
-      </p>
+      </Text>
       <div className="button-group">
-        <Button variant="link" to="/sign-up">
+        <MonyButton variant="link" to="/sign-up">
           Sign Up
-        </Button>
-        <Button variant="link" to="/sign-in">
+        </MonyButton>
+        <MonyButton variant="link" to="/sign-in">
           Sign In
-        </Button>
+        </MonyButton>
       </div>
     </div>
   );

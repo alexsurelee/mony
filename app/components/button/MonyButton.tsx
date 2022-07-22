@@ -1,6 +1,7 @@
 import type { ReactChild } from "react";
 import type { RemixLinkProps } from "@remix-run/react/components";
 import { Link, NavLink } from "@remix-run/react/components";
+import { Button } from "@mantine/core";
 
 export interface ButtonProps {
   children: ReactChild;
@@ -9,13 +10,13 @@ export interface ButtonProps {
   variant?: "default" | "link" | "navlink";
 }
 
-export function Button({
+export function MonyButton({
   children,
   to,
   variant = "default",
   ...buttonProps
 }: ButtonProps) {
-  const button = <button {...buttonProps}>{children}</button>;
+  const button = <Button {...buttonProps}>{children}</Button>;
 
   if (variant === "link" && to) {
     return <Link to={to}>{button}</Link>;
