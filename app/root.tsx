@@ -1,4 +1,4 @@
-import type { LinksFunction, MetaFunction } from "@remix-run/node";
+import type {  MetaFunction } from "@remix-run/node";
 import type { LoaderFunction } from "@remix-run/node";
 import {
   Links,
@@ -11,13 +11,8 @@ import {
 import { ClerkApp, ClerkCatchBoundary } from "@clerk/remix";
 import { rootAuthLoader } from "@clerk/remix/ssr.server";
 
-import stylesUrl from "app/styles/routes/root/root.css";
-import { Navbar, links as navbarLinks } from "./components/navbar/Navbar";
+import { Navbar } from "./components/navbar/Navbar";
 import { AppShell } from "@mantine/core";
-
-export const links: LinksFunction = () => {
-  return [...navbarLinks(), { rel: "stylesheet", href: stylesUrl }];
-};
 
 export const meta: MetaFunction = () => {
   return { title: "Mony" };

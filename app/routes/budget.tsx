@@ -1,12 +1,7 @@
-import type { LinksFunction, LoaderFunction } from "@remix-run/node";
+import type { LoaderFunction } from "@remix-run/node";
 import { json, redirect } from "@remix-run/node";
 
-import styles from "~/styles/routes/budget/budget.css";
 import { getAuth } from "@clerk/remix/ssr.server";
-
-export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: styles }];
-};
 
 export const loader: LoaderFunction = async ({ request }) => {
   const { userId } = await getAuth(request);

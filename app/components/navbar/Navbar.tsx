@@ -1,12 +1,5 @@
 import { UserButton } from "@clerk/remix";
-import type { LinksFunction } from "@remix-run/node";
 import { Link, NavLink } from "@remix-run/react";
-
-import stylesUrl from "app/styles/components/navbar/navbar.css";
-
-export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: stylesUrl }];
-};
 
 export function Navbar() {
   return (

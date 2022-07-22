@@ -1,19 +1,11 @@
-import type { LinksFunction, LoaderFunction } from "@remix-run/node";
+import type { LoaderFunction } from "@remix-run/node";
 import { json, redirect } from "@remix-run/node";
 
-import styles from "~/styles/routes/accounts/accounts.css";
 import { getAuth } from "@clerk/remix/ssr.server";
 import type { Account, Paginated, Transaction } from "akahu";
 import { useLoaderData } from "@remix-run/react";
 import { getAccount, listTransactions } from "~/helpers/akahu";
-import {
-  TransactionList,
-  links as transactionListLinks,
-} from "~/components/accounts/TransactionList";
-
-export const links: LinksFunction = () => {
-  return [...transactionListLinks(), { rel: "stylesheet", href: styles }];
-};
+import { TransactionList } from "~/components/accounts/TransactionList";
 
 type LoaderData = { account: Account; transactions: Paginated<Transaction> };
 

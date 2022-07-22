@@ -1,12 +1,5 @@
-import type { LinksFunction } from "@remix-run/node";
 import type { Paginated, Transaction } from "akahu";
 import { Table } from "@mantine/core";
-
-import stylesUrl from "app/styles/components/accounts/TransactionList.css";
-
-export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: stylesUrl }];
-};
 
 type TransactionListProps = {
   transactions: Paginated<Transaction>;
