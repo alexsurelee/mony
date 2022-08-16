@@ -6,3 +6,11 @@ node_modules
 /.netlify
 .env
 .DS_Store
+
+.vercel
+.output
+
+/build/
+/public/build
+/api/index.js
+/api/index.js.map
