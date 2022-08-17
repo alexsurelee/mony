@@ -3,14 +3,9 @@ node_modules
 /.cache
 /build
 /public/build
-/.netlify
 .env
 .DS_Store
-
 .vercel
 .output
-
-/build/
-/public/build
 /api/index.js
 /api/index.js.map
