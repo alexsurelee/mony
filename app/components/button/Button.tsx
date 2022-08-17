@@ -1,8 +1,8 @@
 import type { LinksFunction } from "@remix-run/node";
 import type { ReactChild } from "react";
 import stylesUrl from "app/styles/components/button/button.css";
-import type { RemixLinkProps } from "@remix-run/react/components";
-import { Link, NavLink } from "@remix-run/react/components";
+import { Link, NavLink } from "@remix-run/react";
+import type { RemixLinkProps } from "@remix-run/react/dist/components";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: stylesUrl }];
