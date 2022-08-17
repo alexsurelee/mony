@@ -13,7 +13,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@clerk/remix": "^0.3.7",
+    "@clerk/remix": "^1.0.2",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
@@ -48,7 +48,7 @@
     "eslint-plugin-storybook": "^0.6.4",
     "remix": "^1.4.0",
     "sass": "^1.49.9",
-    "typescript": "^4.5.5"
+    "typescript": "^4.7.4"
   },
   "engines": {
     "node": ">=14"

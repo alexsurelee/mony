@@ -1,5 +1,5 @@
 import type { LinksFunction } from "@remix-run/node";
-import type { ReactChild } from "react";
+import type { ReactNode } from "react";
 import stylesUrl from "app/styles/components/button/button.css";
 import { Link, NavLink } from "@remix-run/react";
 import type { RemixLinkProps } from "@remix-run/react/dist/components";
@@ -9,7 +9,7 @@ export const links: LinksFunction = () => {
 };
 
 export interface ButtonProps {
-  children: ReactChild;
+  children: ReactNode;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
   to?: RemixLinkProps["to"];
   variant?: "default" | "link" | "navlink";
