@@ -30,27 +30,18 @@ var __export = (target, all) => {
   return target;
 }, __toESM = (module2, isNodeMode) => __reExport(__markAsModule(__defProp(module2 != null ? __create(__getProtoOf(module2)) : {}, "default", !isNodeMode && module2 && module2.__esModule ? { get: () => module2.default, enumerable: !0 } : { value: module2, enumerable: !0 })), module2), __toCommonJS = /* @__PURE__ */ ((cache) => (module2, temp) => cache && cache.get(module2) || (temp = __reExport(__markAsModule({}), module2, 1), cache && cache.set(module2, temp), temp))(typeof WeakMap != "undefined" ? /* @__PURE__ */ new WeakMap() : 0);
 
-// server.js
-var server_exports = {};
-__export(server_exports, {
-  default: () => server_default
-});
-
-// node_modules/@remix-run/dev/dist/compiler/shims/react.ts
-var React = __toESM(require("react"));
-
-// server.js
-var import_vercel = require("@remix-run/vercel");
-
-// server-entry-module:@remix-run/dev/server-build
-var server_build_exports = {};
-__export(server_build_exports, {
+// <stdin>
+var stdin_exports = {};
+__export(stdin_exports, {
   assets: () => assets_manifest_default,
   assetsBuildDirectory: () => assetsBuildDirectory,
   entry: () => entry,
   publicPath: () => publicPath,
   routes: () => routes
 });
+
+// node_modules/@remix-run/dev/dist/compiler/shims/react.ts
+var React = __toESM(require("react"));
 
 // app/entry.server.tsx
 var entry_server_exports = {};
@@ -343,7 +334,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "889c8b0e", entry: { module: "/build/entry.client-AAITHZ4Z.js", imports: ["/build/_shared/chunk-OJM3NPVE.js", "/build/_shared/chunk-BQCUINC5.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-RVLSWYOI.js", imports: ["/build/_shared/chunk-KP3ESUSV.js", "/build/_shared/chunk-PK4VIOGA.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/accounts": { id: "routes/accounts", parentId: "root", path: "accounts", index: void 0, caseSensitive: void 0, module: "/build/routes/accounts-3ESUZZBC.js", imports: ["/build/_shared/chunk-U2OQSAYQ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/accounts.$accountId": { id: "routes/accounts.$accountId", parentId: "root", path: "accounts/:accountId", index: void 0, caseSensitive: void 0, module: "/build/routes/accounts.$accountId-JPQEGFK6.js", imports: ["/build/_shared/chunk-U2OQSAYQ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/budget": { id: "routes/budget", parentId: "root", path: "budget", index: void 0, caseSensitive: void 0, module: "/build/routes/budget-6KF2TIIK.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-FFYZVZLC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/sign-in/$": { id: "routes/sign-in/$", parentId: "root", path: "sign-in/*", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-in/$-VRPFEOTY.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/sign-up/$": { id: "routes/sign-up/$", parentId: "root", path: "sign-up/*", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up/$-2VGRPBUX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/user/$": { id: "routes/user/$", parentId: "root", path: "user/*", index: void 0, caseSensitive: void 0, module: "/build/routes/user/$-SRJSIEJ6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-889C8B0E.js" };
+var assets_manifest_default = { version: "6900842f", entry: { module: "/build/entry.client-TMYDYM4U.js", imports: ["/build/_shared/chunk-NX6Y6MUM.js", "/build/_shared/chunk-BNRLY3XL.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-2NMZDVK4.js", imports: ["/build/_shared/chunk-A563IWXS.js", "/build/_shared/chunk-HCGOVIYL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/accounts": { id: "routes/accounts", parentId: "root", path: "accounts", index: void 0, caseSensitive: void 0, module: "/build/routes/accounts-A2NAPR25.js", imports: ["/build/_shared/chunk-VXUIXYIJ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/accounts.$accountId": { id: "routes/accounts.$accountId", parentId: "root", path: "accounts/:accountId", index: void 0, caseSensitive: void 0, module: "/build/routes/accounts.$accountId-TB3LN2JB.js", imports: ["/build/_shared/chunk-VXUIXYIJ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/budget": { id: "routes/budget", parentId: "root", path: "budget", index: void 0, caseSensitive: void 0, module: "/build/routes/budget-JQ7D7EIM.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-EXSFIFGM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/sign-in/$": { id: "routes/sign-in/$", parentId: "root", path: "sign-in/*", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-in/$-WFKZX3FI.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/sign-up/$": { id: "routes/sign-up/$", parentId: "root", path: "sign-up/*", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up/$-AETK7RJA.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/user/$": { id: "routes/user/$", parentId: "root", path: "user/*", index: void 0, caseSensitive: void 0, module: "/build/routes/user/$-MX3KUWSF.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-6900842F.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -412,9 +403,13 @@ var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { mod
     module: routes_exports
   }
 };
-
-// server.js
-var server_default = (0, import_vercel.createRequestHandler)({ build: server_build_exports, mode: "production" });
-module.exports = __toCommonJS(server_exports);
+module.exports = __toCommonJS(stdin_exports);
 // Annotate the CommonJS export names for ESM import in node:
-0 && (module.exports = {});
+0 && (module.exports = {
+  assets,
+  assetsBuildDirectory,
+  entry,
+  publicPath,
+  routes
+});
+//# sourceMappingURL=index.js.map
