@@ -8,7 +8,8 @@ export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: stylesUrl }];
 };
 
-export interface ButtonProps {
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
   to?: RemixLinkProps["to"];

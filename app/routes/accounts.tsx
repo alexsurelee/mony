@@ -2,20 +2,20 @@ import type { LinksFunction, LoaderFunction } from "@remix-run/node";
 import { json, redirect } from "@remix-run/node";
 
 import styles from "~/styles/routes/accounts/accounts.css";
-import { getAuth } from "@clerk/remix/ssr.server";
 import type { Account } from "akahu";
-import { Link, Outlet, useLoaderData } from "@remix-run/react";
+import { Link, useLoaderData } from "@remix-run/react";
 import {
   AccountPanel,
   links as accountPanelLinks,
 } from "~/components/accounts/AccountPanel";
 import { getAccounts } from "~/helpers/akahu";
+import { getAuth } from "@clerk/remix/ssr.server";
 
 export const links: LinksFunction = () => {
   return [...accountPanelLinks(), { rel: "stylesheet", href: styles }];
 };
 
-export function ErrorBoundary({ error }) {
+export function ErrorBoundary({ error }: { error: Error }) {
   console.error(error);
   return (
     <div>
