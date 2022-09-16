@@ -1,21 +1,30 @@
 @import "../../tokens.scss";
 
-$navbar-height: 50px;
+$navbar-height: 70px;
 
 .topnav {
   background-color: $background-navbar;
+  opacity: 60%;
   overflow: hidden;
   width: 100vw;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 90%;
+  }
 
   a {
     text-decoration: none;
-    background-color: $background-button;
-    color: $text-color;
+    background-color: $background-navbar;
+    color: $text-color-dark;
     text-align: center;
     width: 130px;
     height: $navbar-height;
     line-height: $navbar-height;
     float: left;
+    font-size: $font-size-standard;
+
+    transition: background 0.2s;
 
     &.active {
       background-color: $background-button-active;
@@ -33,5 +42,14 @@ $navbar-height: 50px;
     .cl-user-button {
       margin-top: 25%;
     }
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 60%;
+  }
+  100% {
+    opacity: 90%;
   }
 }

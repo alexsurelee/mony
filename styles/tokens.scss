@@ -1,27 +1,31 @@
 // Raw values
 $honey-yellow: #f6ae2d;
-$ivory: #f9fbf2;
+$white: #f7f9f9;
 $permanent-geranium-lake: #db3a34;
 $sea-green: #09814a;
-$blue-sapphire: #28536b;
+$dark-blue: #2c5784;
 $teal-blue: #537e95;
 $pewter-blue: #7ea8be;
-$charcoal: #373f51;
+$black: #000100;
 
 // Semantic
 $warning: $honey-yellow;
 $error: $permanent-geranium-lake;
 $good: $sea-green;
-$background-light: $ivory;
-$background-dark: $charcoal;
+$background-light: $white;
+$background-dark: $black;
 
 // Base values
-$text-color: $ivory;
+$text-color-light: $white;
+$text-color-dark: $black;
 
 // Components
-$background-button: $blue-sapphire;
+$background-button: $dark-blue;
 $background-button-hover: $teal-blue;
 $background-button-active: $pewter-blue;
-$background-navbar: $blue-sapphire;
+$background-navbar: $white;
 
-$border-panel: $charcoal;
+$border-panel: $black;
+
+// Typography
+$font-size-standard: 16px;

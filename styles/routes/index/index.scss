@@ -1,0 +1,36 @@
+@import "../../tokens.scss";
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+body {
+  background: linear-gradient(-45deg, #000100, #2c5784);
+  background-size: 400% 400%;
+  height: 100vh;
+  animation: gradient 15s ease infinite;
+  color: $text-color-light;
+  mix-blend-mode: screen;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}

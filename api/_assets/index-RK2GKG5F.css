@@ -1,0 +1,11 @@
+.button-group {
+  display: flex;
+  gap: 20px;
+}
+
+body {
+  background: rgb(40, 83, 107);
+  background: linear-gradient(34deg, rgb(40, 83, 107) 0%, rgb(83, 126, 149) 95%, rgb(126, 168, 190) 100%);
+}
+
+/*# sourceMappingURL=index.css.map */

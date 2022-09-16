@@ -9,7 +9,7 @@ export const links: LinksFunction = () => {
 
 export default function Index() {
   return (
-    <div>
+    <div className="welcome">
       <h1>Welcome to Mony</h1>
       <p>
         Mony is currently in development. The expected launch date is February

@@ -1,0 +1,33 @@
+.topnav {
+  background-color: #f9fbf2;
+  overflow: hidden;
+  width: 100vw;
+}
+.topnav a {
+  text-decoration: none;
+  background-color: #f9fbf2;
+  color: #373f51;
+  text-align: center;
+  width: 130px;
+  height: 70px;
+  line-height: 70px;
+  float: left;
+  font-size: 16px;
+  transition: background 0.5s;
+}
+.topnav a.active {
+  background-color: #7ea8be;
+}
+.topnav a:hover {
+  background-color: #537e95;
+}
+.topnav .user-button-wrapper {
+  float: right;
+  height: 70px;
+  margin-right: 9px;
+}
+.topnav .user-button-wrapper .cl-user-button {
+  margin-top: 25%;
+}
+
+/*# sourceMappingURL=navbar.css.map */

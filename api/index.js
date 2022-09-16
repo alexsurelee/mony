@@ -78,7 +78,7 @@ var root_default = "/build/_assets/root-ZVHHYOKW.css";
 var import_remix = require("@clerk/remix"), import_react2 = require("@remix-run/react");
 
 // app/styles/components/navbar/navbar.css
-var navbar_default = "/build/_assets/navbar-OMX5F3MY.css";
+var navbar_default = "/build/_assets/navbar-FBDEASGH.css";
 
 // app/components/navbar/Navbar.tsx
 var links = () => [{ rel: "stylesheet", href: navbar_default }];
@@ -206,7 +206,7 @@ var import_node2 = require("@remix-run/node");
 var import_react5 = require("@remix-run/react");
 
 // app/styles/components/accounts/AccountPanel.css
-var AccountPanel_default = "/build/_assets/AccountPanel-SDLOAOC2.css";
+var AccountPanel_default = "/build/_assets/AccountPanel-LEUWAR2B.css";
 
 // app/components/accounts/AccountPanel.tsx
 var links5 = () => [{ rel: "stylesheet", href: AccountPanel_default }];
@@ -294,7 +294,7 @@ __export(routes_exports, {
 });
 
 // app/styles/components/button/button.css
-var button_default = "/build/_assets/button-4ZAU35RG.css";
+var button_default = "/build/_assets/button-ILOJOQTS.css";
 
 // app/components/button/Button.tsx
 var import_react6 = require("@remix-run/react"), links8 = () => [{ rel: "stylesheet", href: button_default }];
@@ -317,12 +317,14 @@ function Button(_a) {
 }
 
 // app/styles/routes/index/index.css
-var index_default = "/build/_assets/index-HAP3FUIR.css";
+var index_default = "/build/_assets/index-AND6RLJP.css";
 
 // app/routes/index.tsx
 var links9 = () => [...links8(), { rel: "stylesheet", href: index_default }];
 function Index() {
-  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("h1", null, "Welcome to Mony"), /* @__PURE__ */ React.createElement("p", null, "Mony is currently in development. The expected launch date is February 2023."), /* @__PURE__ */ React.createElement("div", {
+  return /* @__PURE__ */ React.createElement("div", {
+    className: "welcome"
+  }, /* @__PURE__ */ React.createElement("h1", null, "Welcome to Mony"), /* @__PURE__ */ React.createElement("p", null, "Mony is currently in development. The expected launch date is February 2023."), /* @__PURE__ */ React.createElement("div", {
     className: "button-group"
   }, /* @__PURE__ */ React.createElement(Button, {
     variant: "link",
@@ -334,7 +336,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "5dc0e306", entry: { module: "/build/entry.client-TMYDYM4U.js", imports: ["/build/_shared/chunk-NX6Y6MUM.js", "/build/_shared/chunk-BNRLY3XL.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-H3GCBQL4.js", imports: ["/build/_shared/chunk-A563IWXS.js", "/build/_shared/chunk-CRVPKOPF.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/accounts": { id: "routes/accounts", parentId: "root", path: "accounts", index: void 0, caseSensitive: void 0, module: "/build/routes/accounts-2GHXE53J.js", imports: ["/build/_shared/chunk-VXUIXYIJ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/accounts.$accountId": { id: "routes/accounts.$accountId", parentId: "root", path: "accounts/:accountId", index: void 0, caseSensitive: void 0, module: "/build/routes/accounts.$accountId-TB3LN2JB.js", imports: ["/build/_shared/chunk-VXUIXYIJ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/budget": { id: "routes/budget", parentId: "root", path: "budget", index: void 0, caseSensitive: void 0, module: "/build/routes/budget-JQ7D7EIM.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-NVUC3NZO.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/sign-in/$": { id: "routes/sign-in/$", parentId: "root", path: "sign-in/*", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-in/$-BB24MMST.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/sign-up/$": { id: "routes/sign-up/$", parentId: "root", path: "sign-up/*", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up/$-VUZSXP55.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/user/$": { id: "routes/user/$", parentId: "root", path: "user/*", index: void 0, caseSensitive: void 0, module: "/build/routes/user/$-OSX2NGHG.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-5DC0E306.js" };
+var assets_manifest_default = { version: "84c30ba3", entry: { module: "/build/entry.client-TMYDYM4U.js", imports: ["/build/_shared/chunk-NX6Y6MUM.js", "/build/_shared/chunk-BNRLY3XL.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-RERAT3AQ.js", imports: ["/build/_shared/chunk-A563IWXS.js", "/build/_shared/chunk-CRVPKOPF.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/accounts": { id: "routes/accounts", parentId: "root", path: "accounts", index: void 0, caseSensitive: void 0, module: "/build/routes/accounts-7FIJW555.js", imports: ["/build/_shared/chunk-VXUIXYIJ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/accounts.$accountId": { id: "routes/accounts.$accountId", parentId: "root", path: "accounts/:accountId", index: void 0, caseSensitive: void 0, module: "/build/routes/accounts.$accountId-TB3LN2JB.js", imports: ["/build/_shared/chunk-VXUIXYIJ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/budget": { id: "routes/budget", parentId: "root", path: "budget", index: void 0, caseSensitive: void 0, module: "/build/routes/budget-JQ7D7EIM.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-YRV3B5KK.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/sign-in/$": { id: "routes/sign-in/$", parentId: "root", path: "sign-in/*", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-in/$-BB24MMST.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/sign-up/$": { id: "routes/sign-up/$", parentId: "root", path: "sign-up/*", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up/$-VUZSXP55.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/user/$": { id: "routes/user/$", parentId: "root", path: "user/*", index: void 0, caseSensitive: void 0, module: "/build/routes/user/$-OSX2NGHG.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-84C30BA3.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

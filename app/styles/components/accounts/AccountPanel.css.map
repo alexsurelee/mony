@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["AccountPanel.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;;AAGF;EACE","file":"AccountPanel.css"}
+{"version":3,"sourceRoot":"","sources":["../../../../styles/components/accounts/AccountPanel.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;;AAGF;EACE","file":"AccountPanel.css"}

@@ -1,0 +1,33 @@
+.button-group {
+  display: flex;
+  gap: 20px;
+}
+
+body {
+  background: linear-gradient(-45deg, #000100, #2c5784);
+  background-size: 400% 400%;
+  height: 100vh;
+  animation: gradient 15s ease infinite;
+  color: #f7f9f9;
+  mix-blend-mode: screen;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+/*# sourceMappingURL=index.css.map */
