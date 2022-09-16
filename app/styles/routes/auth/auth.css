@@ -1,0 +1,9 @@
+.auth-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+/*# sourceMappingURL=auth.css.map */

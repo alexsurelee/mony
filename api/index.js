@@ -78,7 +78,7 @@ var root_default = "/build/_assets/root-ZVHHYOKW.css";
 var import_remix = require("@clerk/remix"), import_react2 = require("@remix-run/react");
 
 // app/styles/components/navbar/navbar.css
-var navbar_default = "/build/_assets/navbar-FBDEASGH.css";
+var navbar_default = "/build/_assets/navbar-5GGKIALN.css";
 
 // app/components/navbar/Navbar.tsx
 var links = () => [{ rel: "stylesheet", href: navbar_default }];
@@ -171,27 +171,40 @@ function AccountPage() {
 // app/routes/sign-in/$.tsx
 var __exports = {};
 __export(__exports, {
-  default: () => SignInPage
+  default: () => SignInPage,
+  links: () => links5
 });
 var import_remix3 = require("@clerk/remix");
+
+// app/styles/routes/auth/auth.css
+var auth_default = "/build/_assets/auth-GEEHVHSA.css";
+
+// app/routes/sign-in/$.tsx
+var links5 = () => [{ rel: "stylesheet", href: auth_default }];
 function SignInPage() {
-  return /* @__PURE__ */ React.createElement(import_remix3.SignIn, {
+  return /* @__PURE__ */ React.createElement("div", {
+    className: "auth-wrapper"
+  }, /* @__PURE__ */ React.createElement(import_remix3.SignIn, {
     path: "/sign-in",
     routing: "path"
-  });
+  }));
 }
 
 // app/routes/sign-up/$.tsx
 var __exports2 = {};
 __export(__exports2, {
-  default: () => SignUpPage
+  default: () => SignUpPage,
+  links: () => links6
 });
 var import_remix4 = require("@clerk/remix");
+var links6 = () => [{ rel: "stylesheet", href: auth_default }];
 function SignUpPage() {
-  return /* @__PURE__ */ React.createElement(import_remix4.SignUp, {
+  return /* @__PURE__ */ React.createElement("div", {
+    className: "auth-wrapper"
+  }, /* @__PURE__ */ React.createElement(import_remix4.SignUp, {
     path: "/sign-up",
     routing: "path"
-  });
+  }));
 }
 
 // app/routes/accounts.tsx
@@ -199,7 +212,7 @@ var accounts_exports = {};
 __export(accounts_exports, {
   ErrorBoundary: () => ErrorBoundary,
   default: () => Accounts,
-  links: () => links6,
+  links: () => links8,
   loader: () => loader3
 });
 var import_node2 = require("@remix-run/node");
@@ -209,7 +222,7 @@ var import_react5 = require("@remix-run/react");
 var AccountPanel_default = "/build/_assets/AccountPanel-LEUWAR2B.css";
 
 // app/components/accounts/AccountPanel.tsx
-var links5 = () => [{ rel: "stylesheet", href: AccountPanel_default }];
+var links7 = () => [{ rel: "stylesheet", href: AccountPanel_default }];
 function AccountPanel({ name, balance }) {
   let formatter = Intl.NumberFormat("en-NZ", {
     style: "currency",
@@ -225,7 +238,7 @@ function AccountPanel({ name, balance }) {
 }
 
 // app/routes/accounts.tsx
-var import_ssr3 = require("@clerk/remix/ssr.server"), links6 = () => [...links5(), { rel: "stylesheet", href: accounts_default }];
+var import_ssr3 = require("@clerk/remix/ssr.server"), links8 = () => [...links7(), { rel: "stylesheet", href: accounts_default }];
 function ErrorBoundary({ error }) {
   return console.error(error), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("h2", null, "There was a problemo \u{1F62D}"), /* @__PURE__ */ React.createElement("div", null, error.message));
 }
@@ -256,7 +269,7 @@ function Accounts() {
 var budget_exports = {};
 __export(budget_exports, {
   default: () => Budget,
-  links: () => links7,
+  links: () => links9,
   loader: () => loader4
 });
 var import_node3 = require("@remix-run/node");
@@ -265,7 +278,7 @@ var import_node3 = require("@remix-run/node");
 var budget_default = "/build/_assets/budget-F7TH7FKM.css";
 
 // app/routes/budget.tsx
-var import_ssr4 = require("@clerk/remix/ssr.server"), links7 = () => [{ rel: "stylesheet", href: budget_default }], loader4 = async ({ request }) => {
+var import_ssr4 = require("@clerk/remix/ssr.server"), links9 = () => [{ rel: "stylesheet", href: budget_default }], loader4 = async ({ request }) => {
   let { userId } = await (0, import_ssr4.getAuth)(request);
   return userId ? (0, import_node3.json)({ ok: !0 }) : (0, import_node3.redirect)("/sign-in?redirect_url=" + request.url);
 };
@@ -290,14 +303,14 @@ function UserProfilePage() {
 var routes_exports = {};
 __export(routes_exports, {
   default: () => Index,
-  links: () => links9
+  links: () => links11
 });
 
 // app/styles/components/button/button.css
 var button_default = "/build/_assets/button-ILOJOQTS.css";
 
 // app/components/button/Button.tsx
-var import_react6 = require("@remix-run/react"), links8 = () => [{ rel: "stylesheet", href: button_default }];
+var import_react6 = require("@remix-run/react"), links10 = () => [{ rel: "stylesheet", href: button_default }];
 function Button(_a) {
   var _b = _a, {
     children,
@@ -320,11 +333,11 @@ function Button(_a) {
 var index_default = "/build/_assets/index-AND6RLJP.css";
 
 // app/routes/index.tsx
-var links9 = () => [...links8(), { rel: "stylesheet", href: index_default }];
+var links11 = () => [...links10(), { rel: "stylesheet", href: index_default }];
 function Index() {
   return /* @__PURE__ */ React.createElement("div", {
     className: "welcome"
-  }, /* @__PURE__ */ React.createElement("h1", null, "Welcome to Mony"), /* @__PURE__ */ React.createElement("p", null, "Mony is currently in development. The expected launch date is February 2023."), /* @__PURE__ */ React.createElement("div", {
+  }, /* @__PURE__ */ React.createElement("h1", null, "Welcome to Mony"), /* @__PURE__ */ React.createElement("p", null, "Mony is currently in development."), /* @__PURE__ */ React.createElement("p", null, "We can't wait to introduce you to the best way to budget in Aotearoa."), /* @__PURE__ */ React.createElement("div", {
     className: "button-group"
   }, /* @__PURE__ */ React.createElement(Button, {
     variant: "link",
@@ -336,7 +349,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "84c30ba3", entry: { module: "/build/entry.client-TMYDYM4U.js", imports: ["/build/_shared/chunk-NX6Y6MUM.js", "/build/_shared/chunk-BNRLY3XL.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-RERAT3AQ.js", imports: ["/build/_shared/chunk-A563IWXS.js", "/build/_shared/chunk-CRVPKOPF.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/accounts": { id: "routes/accounts", parentId: "root", path: "accounts", index: void 0, caseSensitive: void 0, module: "/build/routes/accounts-7FIJW555.js", imports: ["/build/_shared/chunk-VXUIXYIJ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/accounts.$accountId": { id: "routes/accounts.$accountId", parentId: "root", path: "accounts/:accountId", index: void 0, caseSensitive: void 0, module: "/build/routes/accounts.$accountId-TB3LN2JB.js", imports: ["/build/_shared/chunk-VXUIXYIJ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/budget": { id: "routes/budget", parentId: "root", path: "budget", index: void 0, caseSensitive: void 0, module: "/build/routes/budget-JQ7D7EIM.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-YRV3B5KK.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/sign-in/$": { id: "routes/sign-in/$", parentId: "root", path: "sign-in/*", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-in/$-BB24MMST.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/sign-up/$": { id: "routes/sign-up/$", parentId: "root", path: "sign-up/*", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up/$-VUZSXP55.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/user/$": { id: "routes/user/$", parentId: "root", path: "user/*", index: void 0, caseSensitive: void 0, module: "/build/routes/user/$-OSX2NGHG.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-84C30BA3.js" };
+var assets_manifest_default = { version: "41f08cfa", entry: { module: "/build/entry.client-TMYDYM4U.js", imports: ["/build/_shared/chunk-NX6Y6MUM.js", "/build/_shared/chunk-BNRLY3XL.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-ZU2ADBVM.js", imports: ["/build/_shared/chunk-A563IWXS.js", "/build/_shared/chunk-CRVPKOPF.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/accounts": { id: "routes/accounts", parentId: "root", path: "accounts", index: void 0, caseSensitive: void 0, module: "/build/routes/accounts-7FIJW555.js", imports: ["/build/_shared/chunk-VXUIXYIJ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/accounts.$accountId": { id: "routes/accounts.$accountId", parentId: "root", path: "accounts/:accountId", index: void 0, caseSensitive: void 0, module: "/build/routes/accounts.$accountId-TB3LN2JB.js", imports: ["/build/_shared/chunk-VXUIXYIJ.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/budget": { id: "routes/budget", parentId: "root", path: "budget", index: void 0, caseSensitive: void 0, module: "/build/routes/budget-JQ7D7EIM.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-EVPG3EYS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/sign-in/$": { id: "routes/sign-in/$", parentId: "root", path: "sign-in/*", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-in/$-TKLDLAF7.js", imports: ["/build/_shared/chunk-CGDV2C5P.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/sign-up/$": { id: "routes/sign-up/$", parentId: "root", path: "sign-up/*", index: void 0, caseSensitive: void 0, module: "/build/routes/sign-up/$-SF4NYMCZ.js", imports: ["/build/_shared/chunk-CGDV2C5P.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/user/$": { id: "routes/user/$", parentId: "root", path: "user/*", index: void 0, caseSensitive: void 0, module: "/build/routes/user/$-OSX2NGHG.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-41F08CFA.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

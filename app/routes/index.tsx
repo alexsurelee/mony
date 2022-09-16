@@ -11,9 +11,9 @@ export default function Index() {
   return (
     <div className="welcome">
       <h1>Welcome to Mony</h1>
+      <p>Mony is currently in development.</p>
       <p>
-        Mony is currently in development. The expected launch date is February
-        2023.
+        We can't wait to introduce you to the best way to budget in Aotearoa.
       </p>
       <div className="button-group">
         <Button variant="link" to="/sign-up">
