@@ -6,10 +6,11 @@
   "sideEffects": false,
   "scripts": {
     "build": "remix build",
-    "dev": "concurrently \"npm run sass\" \"cross-env NODE_ENV=development remix dev\"",
-    "sass": "sass --watch styles/:app/styles",
+    "dev": "concurrently \"npm run css:sass\" \"npm run css:autoprefixer\" \"cross-env NODE_ENV=development remix dev\"",
+    "css:autoprefixer": "npx postcss --watch app/styles/**/*.css --base app/styles --use autoprefixer -d app/styles",
+    "css:sass": "sass --watch styles/:app/styles",
     "commit": "cz",
-    "storybook": "concurrently \"npm run sass\" \"start-storybook -p 6006\"",
+    "storybook": "concurrently \"npm run css:sass\" \"start-storybook -p 6006\"",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
@@ -42,11 +43,14 @@
     "@storybook/testing-library": "^0.0.13",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
+    "autoprefixer": "^10.4.11",
     "babel-loader": "^8.2.4",
     "concurrently": "^7.0.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.9.0",
     "eslint-plugin-storybook": "^0.6.4",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
     "remix": "^1.4.0",
     "sass": "^1.49.9",
     "typescript": "^4.7.4"

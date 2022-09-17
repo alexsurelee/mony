@@ -5,12 +5,24 @@
 }
 
 body {
-  background: linear-gradient(-45deg, #000100, #2c5784);
+  background: linear-gradient(-45deg, #000100, #2c5784, #7ea8be);
   background-size: 400% 400%;
   height: 100vh;
-  animation: gradient 15s ease infinite;
+  -webkit-animation: gradient 10s ease infinite;
+          animation: gradient 10s ease infinite;
   color: #f7f9f9;
-  mix-blend-mode: screen;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes gradient {
@@ -31,5 +43,4 @@ body {
   align-items: center;
   height: 60vh;
 }
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL3N0eWxlcy9yb3V0ZXMvaW5kZXgvaW5kZXguc2NzcyIsImluZGV4LmNzcyIsIi4uLy4uLy4uLy4uL3N0eWxlcy90b2tlbnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNFLGFBQUE7RUFDQSxTQUFBO0VBQ0EsaUJBQUE7QUNERjs7QURJQTtFQUNFLDhEQUFBO0VBQ0EsMEJBQUE7RUFDQSxhQUFBO0VBQ0EsNkNBQUE7VUFBQSxxQ0FBQTtFQUNBLGNFWE07QURVUjs7QURJQTtFQUNFO0lBQ0UsMkJBQUE7RUNERjtFREdBO0lBQ0UsNkJBQUE7RUNERjtFREdBO0lBQ0UsMkJBQUE7RUNERjtBQUNGOztBRFJBO0VBQ0U7SUFDRSwyQkFBQTtFQ0RGO0VER0E7SUFDRSw2QkFBQTtFQ0RGO0VER0E7SUFDRSwyQkFBQTtFQ0RGO0FBQ0Y7QURJQTtFQUNFLGFBQUE7RUFDQSxzQkFBQTtFQUNBLHVCQUFBO0VBQ0EsbUJBQUE7RUFDQSxZQUFBO0FDRkYiLCJmaWxlIjoiaW5kZXguY3NzIn0= */
