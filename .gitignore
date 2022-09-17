@@ -9,3 +9,5 @@ node_modules
 .output
 /api/index.js
 /api/index.js.map
+/api/_assets/*.css
+app/styles
