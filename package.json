@@ -5,7 +5,7 @@
   "license": "",
   "sideEffects": false,
   "scripts": {
-    "build": "remix build",
+    "build": "npm run build:css && remix build",
     "build:css": "sass styles/:app/styles && npx postcss app/styles/**/*.css --base app/styles --use autoprefixer -d app/styles --env production",
     "dev": "concurrently \"npm run dev:css:sass\" \"npm run dev:css:autoprefixer\" \"cross-env NODE_ENV=development remix dev\"",
     "dev:css:autoprefixer": "npx postcss --watch app/styles/**/*.css --base app/styles --use autoprefixer -d app/styles",
