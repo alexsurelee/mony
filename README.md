@@ -1,6 +1,7 @@
 # Mony
 
 [![Better Uptime Badge](https://betteruptime.com/status-badges/v1/monitor/hiht.svg)](https://betteruptime.com/?utm_source=status_badge)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 [Mony](https://mony.co.nz/) is a budgeting app designed for the New Zealand market.
 
