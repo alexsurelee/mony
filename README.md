@@ -24,7 +24,8 @@ npm install
 ```
 
 3. Set up environment variables
-   Create a `.env`
+
+Create a `.env`
 
 ```
 touch .env
@@ -51,7 +52,7 @@ You're good to go! The app will be running on http://localhost:3000/, unless thi
 
 ## Tech Stack
 
-## Front-end
+### Front-end
 
 #### Remix
 
