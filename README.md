@@ -9,6 +9,8 @@ Currently, it's a personal project, but if it gets good enough then we'll see wh
 
 ## Setup
 
+### Front-end
+
 Mony is a [Remix](https://remix.run/)-based [Jamstack](https://jamstack.org/) website, deployed via [Vercel](https://vercel.com/). Setup is very easy :)
 
 1. Clone the repo
@@ -33,15 +35,16 @@ touch .env
 ```
 
 You'll need the following environment variables:
-| Name | Value |
-| ---- | ----- |
-| CLERK_FRONTEND_API | ... |
-| CLERK_API_KEY | ... |
-| CLERK_JWT_KEY | ... |
-| AKAHU_APP_TOKEN | ... |
-| AKAHU_USER_TOKEN | ... |
-| SUPABASE_URL | ... |
-| SUPABASE_KEY | ... |
+
+| Name               | Value |
+|--------------------|-------|
+| CLERK_FRONTEND_API | ...   |
+| CLERK_API_KEY      | ...   |
+| CLERK_JWT_KEY      | ...   |
+| AKAHU_APP_TOKEN    | ...   |
+| AKAHU_USER_TOKEN   | ...   |
+| SUPABASE_URL       | ...   |
+| SUPABASE_KEY       | ...   |
 
 4. Run the development server
 
@@ -50,6 +53,12 @@ npm run dev
 ```
 
 You're good to go! The app will be running on http://localhost:3000/, unless this port is already occupied.
+
+### Back-end
+
+Mony uses Supabase for its backend, meaning you might want to create your own backend instance for testing purposes.
+
+Follow the [Local Development](https://supabase.com/docs/guides/cli/local-development) guide to get your own Docker instance running.
 
 ## Tech Stack
 
@@ -61,7 +70,7 @@ Mony uses Remix as its React framework of choice. This brings with it some opini
 
 #### Sass
 
-To support advanced styling features whilst remaining within Remix's [guidance for styling](https://remix.run/docs/en/v1/guides/styling), [Sass](https://sass-lang.com/) is used as a the preprocesser of choice. This allows for compilation to route or component-specific css files, enhancing performance.
+To support advanced styling features whilst remaining within Remix's [guidance for styling](https://remix.run/docs/en/v1/guides/styling), [Sass](https://sass-lang.com/) is used as the preprocesser of choice. This allows for compilation to route or component-specific css files, enhancing performance.
 
 Files can be found under `styles/` - this includes `components/` and `routes/`, alongside some tokens.
 
