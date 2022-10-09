@@ -8,6 +8,8 @@ $navbar-height: 70px;
   overflow: hidden;
   width: 100vw;
   transition: opacity 0.2s ease;
+  display: flex;
+  align-items: center;
 
   &:hover {
     opacity: 90%;
@@ -36,9 +38,8 @@ $navbar-height: 70px;
   }
 
   .user-button-wrapper {
-    float: right;
-    height: $navbar-height;
     margin-right: 9px;
+    margin-left: auto;
     .cl-user-button {
       margin-top: 25%;
     }

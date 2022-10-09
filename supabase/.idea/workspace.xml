@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="282b1edb-f59c-4efc-8c0e-e36040db51ad" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../public/favicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../public/mony.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/components/accounts/TransactionList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../app/components/accounts/TransactionList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/components/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../app/components/navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../app/root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/routes/accounts.$accountId.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../app/routes/accounts.$accountId.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/utils/verifyUserAuthenticated.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../app/utils/verifyUserIsAuthenticated.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../styles/components/navbar/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../styles/components/navbar/navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/11bebfcc-15cc-4ce6-b817-317a4ca24502.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/11bebfcc-15cc-4ce6-b817-317a4ca24502.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/11bebfcc-15cc-4ce6-b817-317a4ca24502/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/11bebfcc-15cc-4ce6-b817-317a4ca24502/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/94b5d282-2489-4c59-9204-6515984a52ba.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/94b5d282-2489-4c59-9204-6515984a52ba/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/94b5d282-2489-4c59-9204-6515984a52ba/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/94b5d282-2489-4c59-9204-6515984a52ba/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2FQaaliiuEJkRp0gDVIw1uEITTx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;//wsl$/Ubuntu/home/alex/dev/mony/supabase&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

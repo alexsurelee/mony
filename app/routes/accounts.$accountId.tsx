@@ -1,47 +1,67 @@
-import type { LinksFunction, LoaderFunction } from "@remix-run/node";
-import { json, redirect } from "@remix-run/node";
+import type {LinksFunction, LoaderFunction} from "@remix-run/node";
+import {json} from "@remix-run/node";
 
 import styles from "~/styles/routes/accounts/accounts.css";
-import { getAuth } from "@clerk/remix/ssr.server";
-import type { Account, Paginated, Transaction } from "akahu";
-import { useLoaderData } from "@remix-run/react";
-import { getAccount, listTransactions } from "~/helpers/akahu";
+import type {Account} from "akahu";
+import {useLoaderData} from "@remix-run/react";
+import {getAccount, listTransactions} from "~/helpers/akahu";
 import {
-  TransactionList,
-  links as transactionListLinks,
+    TransactionList,
+    links as transactionListLinks,
 } from "~/components/accounts/TransactionList";
+import {verifyUserIsAuthenticated} from "~/utils/verifyUserIsAuthenticated";
+import {getDB} from "../../supabase.server";
+import type {definitions} from '../../types/database'
 
 export const links: LinksFunction = () => {
-  return [...transactionListLinks(), { rel: "stylesheet", href: styles }];
+    return [...transactionListLinks(), {rel: "stylesheet", href: styles}];
 };
 
-type LoaderData = { account: Account; transactions: Paginated<Transaction> };
+type LoaderData = { account: Account; transactions: definitions['transactions'][] | null };
 
-export const loader: LoaderFunction = async ({ params, request }) => {
-  // Authenticated users only
-  const { userId } = await getAuth(request);
-  if (!userId) {
-    return redirect("/sign-in?redirect_url=" + request.url);
-  }
+export function ErrorBoundary({error}: { error: Error }) {
+    console.error(error);
+    return <div>
+        <div>There was an error!</div>
+        <div>{error.message}</div>
+    </div>
+}
 
-  // Get accounts via akahu
-  const accountId = params.accountId;
-  if (!accountId) throw new Error("Account not found");
+export const loader: LoaderFunction = async ({params, request}) => {
+    await verifyUserIsAuthenticated(request)
 
-  const account = await getAccount(accountId);
-  const transactions = await listTransactions(accountId);
+    // Get accounts via akahu
+    const accountId = params.accountId;
+    if (!accountId) throw new Error("Account not found");
 
-  const data: LoaderData = { account, transactions };
-  return json(data);
+    const akahuAccount = await getAccount(accountId);
+    const akahuTransactions = await listTransactions(accountId);
+
+    const {supabase} = await getDB(request);
+
+    const itemsToUpdate = akahuTransactions.items.map(transaction => ({
+        transaction_id: transaction._id,
+        account_id: transaction._account,
+        user_id: transaction._user,
+        amount: transaction.amount.toString(),
+        is_inflow: (transaction.type === 'CREDIT'),
+        is_outflow: (transaction.type === 'DEBIT'),
+        description: transaction.description,
+        transaction_date: transaction.date
+    }))
+
+    const {data: dbData} = await supabase.from<definitions['transactions']>("transactions").upsert(itemsToUpdate).neq('is_user_modified', true);
+    const data: LoaderData = {account: akahuAccount, transactions: dbData};
+    return json(data);
 };
 
 export default function AccountPage() {
-  const { account, transactions } = useLoaderData<LoaderData>();
+    const {account, transactions} = useLoaderData<LoaderData>();
 
-  return (
-    <>
-      <h1>{account.name}</h1>
-      <TransactionList transactions={transactions} />
-    </>
-  );
+    return (
+        <>
+            <h1>{account.name}</h1>
+            <TransactionList transactions={transactions}/>
+        </>
+    );
 }

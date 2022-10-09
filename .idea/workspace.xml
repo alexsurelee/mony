@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="21ef4fd3-3ce8-4a1d-83e5-bb695b3069d0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/accounts.$accountId.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/accounts.$accountId.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/verifyUserAuthenticated.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/verifyUserIsAuthenticated.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/components/navbar/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/components/navbar/navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supabase/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/supabase/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supabase/.idea/dataSources/11bebfcc-15cc-4ce6-b817-317a4ca24502.xml" beforeDir="false" afterPath="$PROJECT_DIR$/supabase/.idea/dataSources/11bebfcc-15cc-4ce6-b817-317a4ca24502.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supabase/.idea/dataSources/11bebfcc-15cc-4ce6-b817-317a4ca24502/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/supabase/.idea/dataSources/11bebfcc-15cc-4ce6-b817-317a4ca24502/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supabase/.idea/dataSources/94b5d282-2489-4c59-9204-6515984a52ba.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supabase/.idea/dataSources/94b5d282-2489-4c59-9204-6515984a52ba/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supabase/.idea/dataSources/94b5d282-2489-4c59-9204-6515984a52ba/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supabase/.idea/dataSources/94b5d282-2489-4c59-9204-6515984a52ba/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supabase/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/supabase/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FOAQpivE4Ij9rWlUim1bM4Pv0D" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "//wsl$/Ubuntu/home/alex/dev/mony/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_interpreter_path": "wsl://Ubuntu@/home/alex/.nvm/versions/node/v16.14.2/bin/node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "\\\\wsl$\\Ubuntu\\home\\alex\\dev\\mony\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu\home\alex\dev\mony\public" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="wsl://Ubuntu@/home/alex/.nvm/versions/node/v16.14.2/bin/node" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="21ef4fd3-3ce8-4a1d-83e5-bb695b3069d0" name="Changes" comment="" />
+      <created>1664352744457</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664352744457</updated>
+      <workItem from="1664352747004" duration="308000" />
+      <workItem from="1664353073437" duration="1396000" />
+      <workItem from="1664426195631" duration="2683000" />
+      <workItem from="1664431266254" duration="5050000" />
+      <workItem from="1664943531293" duration="381000" />
+      <workItem from="1665204297566" duration="46000" />
+      <workItem from="1665269400732" duration="10597000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="react-testing-library" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
