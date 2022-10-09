@@ -11,11 +11,12 @@ import {
 import { ClerkApp, ClerkCatchBoundary } from "@clerk/remix";
 import { rootAuthLoader } from "@clerk/remix/ssr.server";
 
+import favicon from "public/favicon.svg"
 import stylesUrl from "app/styles/routes/root/root.css";
 import { Navbar, links as navbarLinks } from "./components/navbar/Navbar";
 
 export const links: LinksFunction = () => {
-  return [...navbarLinks(), { rel: "stylesheet", href: stylesUrl }];
+  return [...navbarLinks(), { rel: "stylesheet", href: stylesUrl }, {rel: "icon", href: favicon, type: "image/x-icon"}];
 };
 
 export const meta: MetaFunction = () => {
