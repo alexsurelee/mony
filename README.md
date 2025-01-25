@@ -23,7 +23,7 @@ git clone https://github.com/alexsurelee/mony.git
 
 ```
 cd mony
-npm install
+yarn
 ```
 
 3. Set up environment variables
@@ -49,7 +49,7 @@ You'll need the following environment variables:
 4. Run the development server
 
 ```
-npm run dev
+yarn dev
 ```
 
 You're good to go! The app will be running on http://localhost:3000/, unless this port is already occupied.

@@ -5,13 +5,13 @@
   "license": "",
   "sideEffects": false,
   "scripts": {
-    "build": "npm run build:css && remix build",
+    "build": "yarn build:css && remix build",
     "build:css": "sass styles/:app/styles && npx postcss app/styles/**/*.css --base app/styles --use autoprefixer -d app/styles --env production",
-    "dev": "concurrently \"npm run dev:css:sass\" \"npm run dev:css:autoprefixer\" \"cross-env NODE_ENV=development remix dev\"",
+    "dev": "concurrently \"yarn dev:css:sass\" \"yarn dev:css:autoprefixer\" \"cross-env NODE_ENV=development remix dev\"",
     "dev:css:autoprefixer": "npx postcss --watch app/styles/**/*.css --base app/styles --use autoprefixer -d app/styles",
     "dev:css:sass": "sass --watch styles/:app/styles",
     "commit": "cz",
-    "storybook": "concurrently \"npm run css:sass\" \"start-storybook -p 6006\"",
+    "storybook": "concurrently \"yarn css:sass\" \"start-storybook -p 6006\"",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
@@ -57,7 +57,7 @@
     "typescript": "^4.7.4"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=22"
   },
   "config": {
     "commitizen": {
