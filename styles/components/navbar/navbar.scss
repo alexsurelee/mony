@@ -1,9 +1,9 @@
-@import "../../tokens.scss";
+@use "../../tokens.scss";
 
 $navbar-height: 70px;
 
 .topnav {
-  background-color: $background-navbar;
+  background-color: tokens.$background-navbar;
   opacity: 60%;
   overflow: hidden;
   width: 100vw;
@@ -17,23 +17,23 @@ $navbar-height: 70px;
 
   a {
     text-decoration: none;
-    background-color: $background-navbar;
-    color: $text-color-dark;
+    background-color: tokens.$background-navbar;
+    color: tokens.$text-color-dark;
     text-align: center;
     width: 130px;
     height: $navbar-height;
     line-height: $navbar-height;
     float: left;
-    font-size: $font-size-standard;
+    font-size: tokens.$font-size-standard;
 
     transition: background 0.2s;
 
     &.active {
-      background-color: $background-button-active;
+      background-color: tokens.$background-button-active;
     }
 
     &:hover {
-      background-color: $background-button-hover;
+      background-color: tokens.$background-button-hover;
     }
   }
 

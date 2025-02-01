@@ -1,7 +1,7 @@
-@import "../../tokens.scss";
+@use "../../tokens.scss";
 
 .account-panel {
-  border: 1px solid $border-panel;
+  border: 1px solid tokens.$border-panel;
   border-radius: 5px;
   width: fit-content;
   min-width: 200px;
@@ -9,7 +9,7 @@
   display: flex;
 
   &--name {
-    border-right: 1px solid $border-panel;
+    border-right: 1px solid tokens.$border-panel;
     height: 100%;
     width: fit-content;
     min-width: 30px;
